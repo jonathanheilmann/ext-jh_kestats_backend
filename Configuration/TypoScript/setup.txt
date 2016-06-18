@@ -1,0 +1,12 @@
+
+ # Module configuration
+module.tx_jhkestatsbackend_web_jhkestatsbackendmod1 {
+	persistence {
+		storagePid = {$module.tx_jhkestatsbackend_mod1.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_jhkestatsbackend_mod1.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_jhkestatsbackend_mod1.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_jhkestatsbackend_mod1.view.layoutRootPath}
+	}
+}

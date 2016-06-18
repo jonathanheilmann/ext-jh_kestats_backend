@@ -1,0 +1,46 @@
+
+<f:be.container
+        includeCssFiles="{
+            1: '{f:uri.resource(path:\'Css/styleSheet.css\')}',
+            2: '{f:uri.resource(path:\'Css/table.css\')}'
+        }"
+        includeJsFiles="{
+            1: '{f:uri.resource(path:\'flotr/lib/prototype-1.6.0.2.js\')}',
+            2: '{f:uri.resource(path:\'flotr/lib/canvas2image.js\')}',
+            3: '{f:uri.resource(path:\'flotr/lib/canvastext.js\')}',
+            4: '{f:uri.resource(path:\'flotr/flotr-0.2.0-alpha.js\')}'
+        }"
+>
+
+    <div class="module" data-module-id="" data-module-name="">
+        <div class="module-docheader t3js-module-docheader">
+            <div class="module-docheader-bar module-docheader-bar-navigation t3js-module-docheader-bar t3js-module-docheader-bar-navigation">
+                <div class="module-docheader-bar-column-left">
+                    <div class="form-inline">
+                    </div>
+                </div>
+                <div class="module-docheader-bar-column-right">
+                    <f:be.pagePath />
+                    <f:be.pageInfo />
+                </div>
+            </div>
+            <div class="module-docheader-bar module-docheader-bar-buttons t3js-module-docheader-bar t3js-module-docheader-bar-buttons">
+                <div class="module-docheader-bar-column-left">
+                    <div class="btn-toolbar" role="toolbar" aria-label="">
+                    </div>
+                </div>
+                <div class="module-docheader-bar-column-right">
+                    <div class="btn-toolbar" role="toolbar" aria-label="">
+                        <div class="btn-group" role="group" aria-label="">
+                            <f:be.buttons.shortcut />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="module-body t3js-module-body">
+            <f:flashMessages />
+            <f:render section="content" />
+        </div>
+    </div>
+</f:be.container>

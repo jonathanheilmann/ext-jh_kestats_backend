@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T11:59:26Z" product-name="jh_kestats_backend">
+		<header/>
+		<body>
+			<trans-unit id="tx_jhkestatsbackend_domain_model_mod1">
+				<source>Mod1</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

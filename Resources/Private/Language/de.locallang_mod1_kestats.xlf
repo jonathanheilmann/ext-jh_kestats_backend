@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="">
+		<header>
+			<type>module</type>
+			<description>Language labels for module &quot;web_JhKestatsBackendMod1&quot; from EXT:ke_stats</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="all_pages" approved="yes">
+			<source>Statistics for all pages. Please select a page in the pagetree to filter pages.</source>
+			<target>Statistik für alle Seiten. Bitte wählen Sie im Seitenbaum eine Seite aus, um die Seite als Filter zu verwenden.</target>
+		</trans-unit>
+		<trans-unit id="and_subpages" approved="yes">
+			<source>and all subpages.</source>
+			<target>und alle Unterseiten.</target>
+		</trans-unit>
+		<trans-unit id="category_browsers" approved="yes">
+			<source>Browsers</source>
+			<target>Browser</target>
+		</trans-unit>
+		<trans-unit id="category_day_of_month" approved="yes">
+			<source>day</source>
+			<target>Tag</target>
+		</trans-unit>
+		<trans-unit id="category_day_of_week" approved="yes">
+			<source>day of week</source>
+			<target>Wochentag</target>
+		</trans-unit>
+		<trans-unit id="category_hosts" approved="yes">
+			<source>hosts</source>
+			<target>Hosts</target>
+		</trans-unit>
+		<trans-unit id="category_hour_of_day" approved="yes">
+			<source>hour of day</source>
+			<target>Tageszeit</target>
+		</trans-unit>
+		<trans-unit id="category_ip_addresses" approved="yes">
+			<source>IP Addresses</source>
+			<target>IP-Adressen</target>
+		</trans-unit>
+		<trans-unit id="category_monthly_pages" approved="yes">
+			<source>pageviews (all)</source>
+			<target>Seiten (alle)</target>
+		</trans-unit>
+		<trans-unit id="category_monthly_pages_fe_users" approved="yes">
+			<source>pageviews (fe-users)</source>
+			<target>Seiten (angem.)</target>
+		</trans-unit>
+		<trans-unit id="category_monthly_visits" approved="yes">
+			<source>visits (all)</source>
+			<target>Besuche (alle)</target>
+		</trans-unit>
+		<trans-unit id="category_monthly_visits_fe_users" approved="yes">
+			<source>visits (fe-users)</source>
+			<target>Besuche (angem.)</target>
+		</trans-unit>
+		<trans-unit id="category_operating_systems" approved="yes">
+			<source>Operating Systems</source>
+			<target>Betriebssysteme</target>
+		</trans-unit>
+		<trans-unit id="category_other" approved="yes">
+			<source>Other</source>
+			<target>Sonstige</target>
+		</trans-unit>
+		<trans-unit id="category_pages" approved="yes">
+			<source>Pages</source>
+			<target>Seiten</target>
+		</trans-unit>
+		<trans-unit id="category_pages_all" approved="yes">
+			<source>Pageviews</source>
+			<target>Seitenaufrufe</target>
+		</trans-unit>
+		<trans-unit id="category_pages_feusers" approved="yes">
+			<source>logged-in Pageviews</source>
+			<target>Seitenaufrufe (angemeldet)</target>
+		</trans-unit>
+		<trans-unit id="category_referers" approved="yes">
+			<source>Referers</source>
+			<target>Herkunft</target>
+		</trans-unit>
+		<trans-unit id="category_referers_search_engines" approved="yes">
+			<source>Search Enginges</source>
+			<target>Suchmaschinen</target>
+		</trans-unit>
+		<trans-unit id="category_referers_websites" approved="yes">
+			<source>Websites</source>
+			<target>Websites</target>
+		</trans-unit>
+		<trans-unit id="category_robots" approved="yes">
+			<source>Robots</source>
+			<target>Roboter</target>
+		</trans-unit>
+		<trans-unit id="category_search_strings" approved="yes">
+			<source>Search strings</source>
+			<target>Suchbegriffe</target>
+		</trans-unit>
+		<trans-unit id="category_time" approved="yes">
+			<source>Time</source>
+			<target>Zeiten</target>
+		</trans-unit>
+		<trans-unit id="category_time_hits" approved="yes">
+			<source>Pageviews</source>
+			<target>Seitenaufrufe</target>
+		</trans-unit>
+		<trans-unit id="category_time_visits" approved="yes">
+			<source>Visits</source>
+			<target>Besuche</target>
+		</trans-unit>
+		<trans-unit id="category_time_visits_feusers" approved="yes">
+			<source>Visits (logged-in)</source>
+			<target>Besuche (angemeldet)</target>
+		</trans-unit>
+		<trans-unit id="category_unknown_user_agents" approved="yes">
+			<source>Unknown User Agents</source>
+			<target>Unbekannte User Agents</target>
+		</trans-unit>
+		<trans-unit id="category_user_agents" approved="yes">
+			<source>Browsers/Robots</source>
+			<target>Browser/Roboter</target>
+		</trans-unit>
+		<trans-unit id="category_visits" approved="yes">
+			<source>Visits</source>
+			<target>Besuche</target>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_month" approved="yes">
+			<source>day</source>
+			<target>Tag</target>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_month_feusers" approved="yes">
+			<source>day</source>
+			<target>Tag</target>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_week" approved="yes">
+			<source>day of week</source>
+			<target>Wochentag</target>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_week_feusers" approved="yes">
+			<source>day of week</source>
+			<target>Wochentag</target>
+		</trans-unit>
+		<trans-unit id="category_visits_hour_of_day" approved="yes">
+			<source>hour of day</source>
+			<target>Tageszeit</target>
+		</trans-unit>
+		<trans-unit id="category_visits_hour_of_day_feusers" approved="yes">
+			<source>hour of day</source>
+			<target>Tageszeit</target>
+		</trans-unit>
+		<trans-unit id="csvdownload" approved="yes">
+			<source>CSV-Download</source>
+			<target>CSV-Download</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_filename" approved="yes">
+			<source>TYPO3-Statistics_###DATE###.csv</source>
+			<target>TYPO3-Statistik_###DATE###.csv</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_generated_on" approved="yes">
+			<source>generated on </source>
+			<target>erstellt am </target>
+		</trans-unit>
+		<trans-unit id="csvdownload_list_time_hits" approved="yes">
+			<source>Pageviews per month</source>
+			<target>Seitenaufrufe pro Monat</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_list_time_visits" approved="yes">
+			<source>Visits per month</source>
+			<target>Besuche pro Monat</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_list_time_visits_feusers" approved="yes">
+			<source>logged-in visits per month</source>
+			<target>eingeloggte Besuche pro Monat</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_more_statistics" approved="yes">
+			<source>More</source>
+			<target>Weitere</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_pages" approved="yes">
+			<source>Monthly progression</source>
+			<target>Seitenaufrufe gesamt</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_referer" approved="yes">
+			<source>Referrers per month</source>
+			<target>Herkunft</target>
+		</trans-unit>
+		<trans-unit id="csvdownload_statistics_for_month" approved="yes">
+			<source>Statistics for </source>
+			<target>Statistik für </target>
+		</trans-unit>
+		<trans-unit id="csvdownload_user_agents" approved="yes">
+			<source>Browsers/Roboters</source>
+			<target>Browser/Roboter</target>
+		</trans-unit>
+		<trans-unit id="extension_commerce" approved="yes">
+			<source>Products</source>
+			<target>Produkte</target>
+		</trans-unit>
+		<trans-unit id="extension_ke_troubletickets" approved="yes">
+			<source>Troubletickets</source>
+			<target>Aufgaben</target>
+		</trans-unit>
+		<trans-unit id="extension_ke_yac" approved="yes">
+			<source>Calendar</source>
+			<target>Kalender</target>
+		</trans-unit>
+		<trans-unit id="extension_naw_securedl" approved="yes">
+			<source>Downloads</source>
+			<target>Downloads</target>
+		</trans-unit>
+		<trans-unit id="extension_tt_news" approved="yes">
+			<source>News</source>
+			<target>News</target>
+		</trans-unit>
+		<trans-unit id="header_counter" approved="yes">
+			<source>Counter</source>
+			<target>Anzahl</target>
+		</trans-unit>
+		<trans-unit id="header_crdate" approved="yes">
+			<source>date</source>
+			<target>Datum</target>
+		</trans-unit>
+		<trans-unit id="header_element_language" approved="yes">
+			<source>language</source>
+			<target>Sprache</target>
+		</trans-unit>
+		<trans-unit id="header_element_title" approved="yes">
+			<source>Name</source>
+			<target>Bezeichnung</target>
+		</trans-unit>
+		<trans-unit id="header_element_type" approved="yes">
+			<source>type</source>
+			<target>Typ</target>
+		</trans-unit>
+		<trans-unit id="header_element_uid" approved="yes">
+			<source>ID</source>
+			<target>ID</target>
+		</trans-unit>
+		<trans-unit id="header_host" approved="yes">
+			<source></source>
+			<target>Host</target>
+		</trans-unit>
+		<trans-unit id="header_line_number" approved="yes">
+			<source>Line</source>
+			<target>Zeile</target>
+		</trans-unit>
+		<trans-unit id="header_operating_system" approved="yes">
+			<source></source>
+			<target>Betriebssystem</target>
+		</trans-unit>
+		<trans-unit id="header_page" approved="yes">
+			<source></source>
+			<target>Seite</target>
+		</trans-unit>
+		<trans-unit id="header_pages_per_visit" approved="yes">
+			<source>Pages per visit</source>
+			<target>Seiten pro Besuch</target>
+		</trans-unit>
+		<trans-unit id="header_pageviews" approved="yes">
+			<source>Pageviews</source>
+			<target>Seitenaufrufe</target>
+		</trans-unit>
+		<trans-unit id="header_percent" approved="yes">
+			<source>Percentage</source>
+			<target>Anteil</target>
+		</trans-unit>
+		<trans-unit id="header_time" approved="yes">
+			<source>time</source>
+			<target>Zeit</target>
+		</trans-unit>
+		<trans-unit id="header_tstamp" approved="yes">
+			<source>time</source>
+			<target>Zeit</target>
+		</trans-unit>
+		<trans-unit id="header_visits" approved="yes">
+			<source>Visits</source>
+			<target>Besuche</target>
+		</trans-unit>
+		<trans-unit id="iplogging_is_disabled" approved="yes">
+			<source>IP-Logging is disabled. You may enable it in the extension manager.</source>
+			<target>IP-Logging ist deaktiviert. Sie können es im Extension-Manager aktivieren.</target>
+		</trans-unit>
+		<trans-unit id="language_default" approved="yes">
+			<source>default language</source>
+			<target>Standardsprache</target>
+		</trans-unit>
+		<trans-unit id="last_update" approved="yes">
+			<source>Last update: </source>
+			<target>Zuletzt aktualisiert: </target>
+		</trans-unit>
+		<trans-unit id="list_details" approved="yes">
+			<source>Single month details</source>
+			<target>Monats-Detailauswertung</target>
+		</trans-unit>
+		<trans-unit id="list_details_csv" approved="yes">
+			<source>Download single month details</source>
+			<target>Herunterladen der Monats-Detailauswertung</target>
+		</trans-unit>
+		<trans-unit id="list_full" approved="yes">
+			<source>Monthly progression</source>
+			<target>Monatlicher Verlauf</target>
+		</trans-unit>
+		<trans-unit id="list_full_csv" approved="yes">
+			<source>Download monthly progression</source>
+			<target>Herunterladen der monatlichen Verlaufsdaten</target>
+		</trans-unit>
+		<trans-unit id="min" approved="yes">
+			<source>min.</source>
+			<target>Min.</target>
+		</trans-unit>
+		<trans-unit id="month_1" approved="yes">
+			<source>January</source>
+			<target>Januar</target>
+		</trans-unit>
+		<trans-unit id="month_10" approved="yes">
+			<source>October</source>
+			<target>Oktober</target>
+		</trans-unit>
+		<trans-unit id="month_11" approved="yes">
+			<source>November</source>
+			<target>November</target>
+		</trans-unit>
+		<trans-unit id="month_12" approved="yes">
+			<source>December</source>
+			<target>Dezember</target>
+		</trans-unit>
+		<trans-unit id="month_2" approved="yes">
+			<source>February</source>
+			<target>Februar</target>
+		</trans-unit>
+		<trans-unit id="month_3" approved="yes">
+			<source>March</source>
+			<target>März</target>
+		</trans-unit>
+		<trans-unit id="month_4" approved="yes">
+			<source>April</source>
+			<target>April</target>
+		</trans-unit>
+		<trans-unit id="month_5" approved="yes">
+			<source>May</source>
+			<target>Mai</target>
+		</trans-unit>
+		<trans-unit id="month_6" approved="yes">
+			<source>June</source>
+			<target>Juni</target>
+		</trans-unit>
+		<trans-unit id="month_7" approved="yes">
+			<source>July</source>
+			<target>Juli</target>
+		</trans-unit>
+		<trans-unit id="month_8" approved="yes">
+			<source>August</source>
+			<target>August</target>
+		</trans-unit>
+		<trans-unit id="month_9" approved="yes">
+			<source>September</source>
+			<target>September</target>
+		</trans-unit>
+		<trans-unit id="no_data" approved="yes">
+			<source>No data found.</source>
+			<target>Keine Daten vorhanden.</target>
+		</trans-unit>
+		<trans-unit id="overview" approved="yes">
+			<source>Overview</source>
+			<target>Übersicht</target>
+		</trans-unit>
+		<trans-unit id="overview_pageviews_and_visits_monthly" approved="yes">
+			<source>Pageviews and visits of the last 12 months</source>
+			<target>Seitenaufrufe und Besuche der letzten 12 Monate</target>
+		</trans-unit>
+		<trans-unit id="overview_pageviews_current_month" approved="yes">
+			<source>Top 10: Pageviews in current month</source>
+			<target>Top 10: Seitenaufrufe im aktuellen Monat</target>
+		</trans-unit>
+		<trans-unit id="overview_referers_external_websites" approved="yes">
+			<source>Top 10: Referers from external websites</source>
+			<target>Top 10: Verweise von externen Seiten</target>
+		</trans-unit>
+		<trans-unit id="overview_search_words" approved="yes">
+			<source>Top 10: Search words from external search engines</source>
+			<target>Top 10: Suchbegriffe über externe Suchmaschinen</target>
+		</trans-unit>
+		<trans-unit id="please_select_page" approved="yes">
+			<source>Please select a page in the pagetree.</source>
+			<target>Bitte wählen Sie im Seitenbaum eine Seite aus.</target>
+		</trans-unit>
+		<trans-unit id="referer" approved="yes">
+			<source>Referer</source>
+			<target>Herkunft</target>
+		</trans-unit>
+		<trans-unit id="refresh" approved="yes">
+			<source>Refresh</source>
+			<target>Aktualisieren</target>
+		</trans-unit>
+		<trans-unit id="searchstring" approved="yes">
+			<source>Searchstring</source>
+			<target>Suchbegriff</target>
+		</trans-unit>
+		<trans-unit id="sec" approved="yes">
+			<source>sec.</source>
+			<target>Sek.</target>
+		</trans-unit>
+		<trans-unit id="selector_language" approved="yes">
+			<source>Language</source>
+			<target>Sprache</target>
+		</trans-unit>
+		<trans-unit id="selector_language_all" approved="yes">
+			<source>all languages</source>
+			<target>alle Sprachen</target>
+		</trans-unit>
+		<trans-unit id="selector_type" approved="yes">
+			<source>type</source>
+			<target>Typ</target>
+		</trans-unit>
+		<trans-unit id="selector_type_all" approved="yes">
+			<source>all types</source>
+			<target>alle Typen</target>
+		</trans-unit>
+		<trans-unit id="show_entries_number" approved="yes">
+			<source>entries</source>
+			<target>Einträge</target>
+		</trans-unit>
+		<trans-unit id="statistics_for" approved="yes">
+			<source>Statistics for</source>
+			<target>Statistik für</target>
+		</trans-unit>
+		<trans-unit id="sum" approved="yes">
+			<source>Sum</source>
+			<target>Summe</target>
+		</trans-unit>
+		<trans-unit id="title" approved="yes">
+			<source>Statistics</source>
+			<target>Statistik</target>
+		</trans-unit>
+		<trans-unit id="tracking_is_disabled" approved="yes">
+			<source>Tracking is disabled. You may enable it in the extension-manager.</source>
+			<target>Die Tracking-Funktion ist deaktiviert. Sie können sie im Extension-Manager aktivieren.</target>
+		</trans-unit>
+		<trans-unit id="type_extension" approved="yes">
+			<source>Extensions</source>
+			<target>Erweiterungen</target>
+		</trans-unit>
+		<trans-unit id="type_pages" approved="yes">
+			<source>Pages</source>
+			<target>Seiten</target>
+		</trans-unit>
+		<trans-unit id="type_pages_day_of_month" approved="yes">
+			<source>Pageviews (day of month)</source>
+			<target>Seitenaufrufe (Tage im Monat)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_day_of_week" approved="yes">
+			<source>Pageviews (day of week)</source>
+			<target>Seitenaufrufe (Wochentage)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_hosts" approved="yes">
+			<source>Pageviews (hosts of the visitors)</source>
+			<target>Seitenaufrufe (Hostnamen der Besucher)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_hour_of_day" approved="yes">
+			<source>Pageviews (hour of day)</source>
+			<target>Seitenaufrufe (Tageszeit)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_ip_addresses" approved="yes">
+			<source>Pageviews (ip addresses of the visitors)</source>
+			<target>Seitenaufrufe (IP-Adressen der Besucher)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_monthly" approved="yes">
+			<source></source>
+			<target>Seitenaufrufe (pro Monat)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_monthly_fe_users" approved="yes">
+			<source>Pageviews (pageviews per month, only logged in users)</source>
+			<target>Seitenaufrufe (pro Monat, nur eingeloggte Benutzer)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_operating_systems" approved="yes">
+			<source>Pageviews (operating systems of the visitors)</source>
+			<target>Seitenaufrufe (Betriebssysteme der Besucher)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_referers_search_engines" approved="yes">
+			<source>Pageviews (referers: search engines)</source>
+			<target>Seitenaufrufe (Herkunft: Suchmaschinen)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_referers_searchwords" approved="yes">
+			<source>Pageviews (search words)</source>
+			<target>Seitenaufrufe (Suchbegriffe)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_referers_websites" approved="yes">
+			<source>Pageviews (referers: websites)</source>
+			<target>Seitenaufrufe (Herkunft: andere Websites)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_user_agents_browsers" approved="yes">
+			<source>Pageviews (user agents: browsers)</source>
+			<target>Seitenaufrufe (User Agent: Browser)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_user_agents_robots" approved="yes">
+			<source>Pageviews (robots)</source>
+			<target>Seitenaufrufe (Roboter)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_user_agents_unknown" approved="yes">
+			<source>Pageviews (unknown user agents)</source>
+			<target>Seitenaufrufe (unbekannte User Agents)</target>
+		</trans-unit>
+		<trans-unit id="type_pages_visits_monthly" approved="yes">
+			<source>Visits (visits per month)</source>
+			<target>Besuche (visits) pro Monat</target>
+		</trans-unit>
+		<trans-unit id="type_pages_visits_monthly_fe_users" approved="yes">
+			<source>Visits (visits per month, only logged in users)</source>
+			<target>Besuche (visits) pro Monat, nur eingeloggte Benutzer</target>
+		</trans-unit>
+		<trans-unit id="type_tracking" approved="yes">
+			<source>Live Tracking</source>
+			<target>Live Tracking</target>
+		</trans-unit>
+		<trans-unit id="type_visits_day_of_month" approved="yes">
+			<source></source>
+			<target>Besuche (Tage im Monat)</target>
+		</trans-unit>
+		<trans-unit id="type_visits_day_of_month_feusers" approved="yes">
+			<source>logged-in Visits (day of month)</source>
+			<target>eingeloggte Besuche (Tage im Monat)</target>
+		</trans-unit>
+		<trans-unit id="type_visits_day_of_week" approved="yes">
+			<source></source>
+			<target>Besuche (Wochentage)</target>
+		</trans-unit>
+		<trans-unit id="type_visits_day_of_week_feusers" approved="yes">
+			<source>logged-in Visits (day of week)</source>
+			<target>eingeloggte Besuche (Wochentage)</target>
+		</trans-unit>
+		<trans-unit id="type_visits_hour_of_day" approved="yes">
+			<source></source>
+			<target>Besuche (Tageszeit)</target>
+		</trans-unit>
+		<trans-unit id="type_visits_hour_of_day_feusers" approved="yes">
+			<source>logged-in Visits (hour of day)</source>
+			<target>eingeloggte Besuche (Tageszeit)</target>
+		</trans-unit>
+		<trans-unit id="updated_until" approved="yes">
+			<source>Updated until: </source>
+			<target>Aktualisiert bis: </target>
+		</trans-unit>
+		<trans-unit id="weekday_0" approved="yes">
+			<source>Sunday</source>
+			<target>Sonntag</target>
+		</trans-unit>
+		<trans-unit id="weekday_1" approved="yes">
+			<source>Monday</source>
+			<target>Montag</target>
+		</trans-unit>
+		<trans-unit id="weekday_2" approved="yes">
+			<source>Tuesday</source>
+			<target>Dienstag</target>
+		</trans-unit>
+		<trans-unit id="weekday_3" approved="yes">
+			<source>Wednesday</source>
+			<target>Mittwoch</target>
+		</trans-unit>
+		<trans-unit id="weekday_4" approved="yes">
+			<source>Thursday</source>
+			<target>Donnerstag</target>
+		</trans-unit>
+		<trans-unit id="weekday_5" approved="yes">
+			<source>Friday</source>
+			<target>Freitag</target>
+		</trans-unit>
+		<trans-unit id="weekday_6" approved="yes">
+			<source>Saturday</source>
+			<target>Samstag</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
