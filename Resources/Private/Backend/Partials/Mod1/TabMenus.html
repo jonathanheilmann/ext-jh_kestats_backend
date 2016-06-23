@@ -1,0 +1,11 @@
+<f:for each="{tabMenus}" key="menuName" as="menuArray">
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+        <f:for each="{menuArray}" as="menuItem">
+            <li class="{f:if(condition:'{menuItem.isActive}', then:'active')}">
+                <f:link.action arguments="{menuItem.arguments}">
+                    {menuItem.description}
+                </f:link.action>
+            </li>
+        </f:for>
+    </ul>
+</f:for>

@@ -1,8 +1,423 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T11:59:26Z" product-name="jh_kestats_backend">
-		<header/>
+	<file source-language="en" datatype="plaintext" original="messages" date="">
+		<header>
+			<type>module</type>
+			<description>Language labels for module &quot;web_JhKestatsBackendMod1&quot; from EXT:ke_stats</description>
+			<generator>LFEditor</generator>
+		</header>
 		<body>
+		<trans-unit id="all_pages">
+			<source>Statistics for all pages. Please select a page in the pagetree to filter pages.</source>
+		</trans-unit>
+		<trans-unit id="and_subpages">
+			<source>and all subpages.</source>
+		</trans-unit>
+		<trans-unit id="category_browsers">
+			<source>Browsers</source>
+		</trans-unit>
+		<trans-unit id="category_day_of_month">
+			<source>day</source>
+		</trans-unit>
+		<trans-unit id="category_day_of_week">
+			<source>day of week</source>
+		</trans-unit>
+		<trans-unit id="category_hosts">
+			<source>hosts</source>
+		</trans-unit>
+		<trans-unit id="category_hour_of_day">
+			<source>hour of day</source>
+		</trans-unit>
+		<trans-unit id="category_ip_addresses">
+			<source>IP Addresses</source>
+		</trans-unit>
+		<trans-unit id="category_monthly_pages">
+			<source>pageviews (all)</source>
+		</trans-unit>
+		<trans-unit id="category_monthly_pages_fe_users">
+			<source>pageviews (fe-users)</source>
+		</trans-unit>
+		<trans-unit id="category_monthly_visits">
+			<source>visits (all)</source>
+		</trans-unit>
+		<trans-unit id="category_monthly_visits_fe_users">
+			<source>visits (fe-users)</source>
+		</trans-unit>
+		<trans-unit id="category_operating_systems">
+			<source>Operating Systems</source>
+		</trans-unit>
+		<trans-unit id="category_other">
+			<source>Other</source>
+		</trans-unit>
+		<trans-unit id="category_pages">
+			<source>Pages</source>
+		</trans-unit>
+		<trans-unit id="category_pages_all">
+			<source>Pageviews</source>
+		</trans-unit>
+		<trans-unit id="category_pages_feusers">
+			<source>logged-in Pageviews</source>
+		</trans-unit>
+		<trans-unit id="category_referers">
+			<source>Referers</source>
+		</trans-unit>
+		<trans-unit id="category_referers_search_engines">
+			<source>Search Enginges</source>
+		</trans-unit>
+		<trans-unit id="category_referers_websites">
+			<source>Websites</source>
+		</trans-unit>
+		<trans-unit id="category_robots">
+			<source>Robots</source>
+		</trans-unit>
+		<trans-unit id="category_search_strings">
+			<source>Search strings</source>
+		</trans-unit>
+		<trans-unit id="category_time">
+			<source>Time</source>
+		</trans-unit>
+		<trans-unit id="category_time_hits">
+			<source>Pageviews</source>
+		</trans-unit>
+		<trans-unit id="category_time_visits">
+			<source>Visits</source>
+		</trans-unit>
+		<trans-unit id="category_time_visits_feusers">
+			<source>Visits (logged-in)</source>
+		</trans-unit>
+		<trans-unit id="category_unknown_user_agents">
+			<source>Unknown User Agents</source>
+		</trans-unit>
+		<trans-unit id="category_user_agents">
+			<source>Browsers/Robots</source>
+		</trans-unit>
+		<trans-unit id="category_visits">
+			<source>Visits</source>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_month">
+			<source>day</source>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_month_feusers">
+			<source>day</source>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_week">
+			<source>day of week</source>
+		</trans-unit>
+		<trans-unit id="category_visits_day_of_week_feusers">
+			<source>day of week</source>
+		</trans-unit>
+		<trans-unit id="category_visits_hour_of_day">
+			<source>hour of day</source>
+		</trans-unit>
+		<trans-unit id="category_visits_hour_of_day_feusers">
+			<source>hour of day</source>
+		</trans-unit>
+		<trans-unit id="csvdownload">
+			<source>CSV-Download</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_filename">
+			<source>TYPO3-Statistics_###DATE###.csv</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_generated_on">
+			<source>generated on </source>
+		</trans-unit>
+		<trans-unit id="csvdownload_list_time_hits">
+			<source>Pageviews per month</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_list_time_visits">
+			<source>Visits per month</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_list_time_visits_feusers">
+			<source>logged-in visits per month</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_more_statistics">
+			<source>More</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_pages">
+			<source>Monthly progression</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_referer">
+			<source>Referrers per month</source>
+		</trans-unit>
+		<trans-unit id="csvdownload_statistics_for_month">
+			<source>Statistics for </source>
+		</trans-unit>
+		<trans-unit id="csvdownload_user_agents">
+			<source>Browsers/Roboters</source>
+		</trans-unit>
+		<trans-unit id="extension_commerce">
+			<source>Products</source>
+		</trans-unit>
+		<trans-unit id="extension_ke_troubletickets">
+			<source>Troubletickets</source>
+		</trans-unit>
+		<trans-unit id="extension_ke_yac">
+			<source>Calendar</source>
+		</trans-unit>
+		<trans-unit id="extension_naw_securedl">
+			<source>Downloads</source>
+		</trans-unit>
+		<trans-unit id="extension_tt_news">
+			<source>News</source>
+		</trans-unit>
+		<trans-unit id="flushCache.all">
+			<source>Flush complete statistics cache</source>
+		</trans-unit>
+		<trans-unit id="flushCache.subpages">
+			<source>Flush statistics cache of this page and all sub-pages</source>
+		</trans-unit>
+		<trans-unit id="flushCache.this">
+			<source>Flush statistics cache of this page</source>
+		</trans-unit>
+		<trans-unit id="header_counter">
+			<source>Counter</source>
+		</trans-unit>
+		<trans-unit id="header_crdate">
+			<source>date</source>
+		</trans-unit>
+		<trans-unit id="header_element_language">
+			<source>language</source>
+		</trans-unit>
+		<trans-unit id="header_element_title">
+			<source>Name</source>
+		</trans-unit>
+		<trans-unit id="header_element_type">
+			<source>type</source>
+		</trans-unit>
+		<trans-unit id="header_element_uid">
+			<source>ID</source>
+		</trans-unit>
+		<trans-unit id="header_line_number">
+			<source>Line</source>
+		</trans-unit>
+		<trans-unit id="header_pages_per_visit">
+			<source>Pages per visit</source>
+		</trans-unit>
+		<trans-unit id="header_pageviews">
+			<source>Pageviews</source>
+		</trans-unit>
+		<trans-unit id="header_percent">
+			<source>Percentage</source>
+		</trans-unit>
+		<trans-unit id="header_time">
+			<source>time</source>
+		</trans-unit>
+		<trans-unit id="header_tstamp">
+			<source>time</source>
+		</trans-unit>
+		<trans-unit id="header_visits">
+			<source>Visits</source>
+		</trans-unit>
+		<trans-unit id="iplogging_is_disabled">
+			<source>IP-Logging is disabled. You may enable it in the extension manager.</source>
+		</trans-unit>
+		<trans-unit id="language_default">
+			<source>default language</source>
+		</trans-unit>
+		<trans-unit id="last_update">
+			<source>Last update: </source>
+		</trans-unit>
+		<trans-unit id="list_details">
+			<source>Single month details</source>
+		</trans-unit>
+		<trans-unit id="list_details_csv">
+			<source>Download single month details</source>
+		</trans-unit>
+		<trans-unit id="list_full">
+			<source>Monthly progression</source>
+		</trans-unit>
+		<trans-unit id="list_full_csv">
+			<source>Download monthly progression</source>
+		</trans-unit>
+		<trans-unit id="min">
+			<source>min.</source>
+		</trans-unit>
+		<trans-unit id="month_1">
+			<source>January</source>
+		</trans-unit>
+		<trans-unit id="month_10">
+			<source>October</source>
+		</trans-unit>
+		<trans-unit id="month_11">
+			<source>November</source>
+		</trans-unit>
+		<trans-unit id="month_12">
+			<source>December</source>
+		</trans-unit>
+		<trans-unit id="month_2">
+			<source>February</source>
+		</trans-unit>
+		<trans-unit id="month_3">
+			<source>March</source>
+		</trans-unit>
+		<trans-unit id="month_4">
+			<source>April</source>
+		</trans-unit>
+		<trans-unit id="month_5">
+			<source>May</source>
+		</trans-unit>
+		<trans-unit id="month_6">
+			<source>June</source>
+		</trans-unit>
+		<trans-unit id="month_7">
+			<source>July</source>
+		</trans-unit>
+		<trans-unit id="month_8">
+			<source>August</source>
+		</trans-unit>
+		<trans-unit id="month_9">
+			<source>September</source>
+		</trans-unit>
+		<trans-unit id="no_data">
+			<source>No data found.</source>
+		</trans-unit>
+		<trans-unit id="overview">
+			<source>Overview</source>
+		</trans-unit>
+		<trans-unit id="overview_pageviews_and_visits_monthly">
+			<source>Pageviews and visits of the last 12 months</source>
+		</trans-unit>
+		<trans-unit id="overview_pageviews_current_month">
+			<source>Top 10: Pageviews in current month</source>
+		</trans-unit>
+		<trans-unit id="overview_referers_external_websites">
+			<source>Top 10: Referers from external websites</source>
+		</trans-unit>
+		<trans-unit id="overview_search_words">
+			<source>Top 10: Search words from external search engines</source>
+		</trans-unit>
+		<trans-unit id="please_select_page">
+			<source>Please select a page in the pagetree.</source>
+		</trans-unit>
+		<trans-unit id="referer">
+			<source>Referer</source>
+		</trans-unit>
+		<trans-unit id="refresh">
+			<source>Refresh</source>
+		</trans-unit>
+		<trans-unit id="searchstring">
+			<source>Searchstring</source>
+		</trans-unit>
+		<trans-unit id="sec">
+			<source>sec.</source>
+		</trans-unit>
+		<trans-unit id="selector_language">
+			<source>Language</source>
+		</trans-unit>
+		<trans-unit id="selector_language_all">
+			<source>all languages</source>
+		</trans-unit>
+		<trans-unit id="selector_type">
+			<source>type</source>
+		</trans-unit>
+		<trans-unit id="selector_type_all">
+			<source>all types</source>
+		</trans-unit>
+		<trans-unit id="show_entries_number">
+			<source>entries</source>
+		</trans-unit>
+		<trans-unit id="statistics_for">
+			<source>Statistics for</source>
+		</trans-unit>
+		<trans-unit id="sum">
+			<source>Sum</source>
+		</trans-unit>
+		<trans-unit id="title">
+			<source>Statistics</source>
+		</trans-unit>
+		<trans-unit id="tracking_is_disabled">
+			<source>Tracking is disabled. You may enable it in the extension-manager.</source>
+		</trans-unit>
+		<trans-unit id="type_extension">
+			<source>Extensions</source>
+		</trans-unit>
+		<trans-unit id="type_pages">
+			<source>Pages</source>
+		</trans-unit>
+		<trans-unit id="type_pages_day_of_month">
+			<source>Pageviews (day of month)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_day_of_week">
+			<source>Pageviews (day of week)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_hosts">
+			<source>Pageviews (hosts of the visitors)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_hour_of_day">
+			<source>Pageviews (hour of day)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_ip_addresses">
+			<source>Pageviews (ip addresses of the visitors)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_monhthly">
+			<source>Pageviews (pageviews per month)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_monthly_fe_users">
+			<source>Pageviews (pageviews per month, only logged in users)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_operating_systems">
+			<source>Pageviews (operating systems of the visitors)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_referers_search_engines">
+			<source>Pageviews (referers: search engines)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_referers_searchwords">
+			<source>Pageviews (search words)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_referers_websites">
+			<source>Pageviews (referers: websites)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_user_agents_browsers">
+			<source>Pageviews (user agents: browsers)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_user_agents_robots">
+			<source>Pageviews (robots)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_user_agents_unknown">
+			<source>Pageviews (unknown user agents)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_visits_monthly">
+			<source>Visits (visits per month)</source>
+		</trans-unit>
+		<trans-unit id="type_pages_visits_monthly_fe_users">
+			<source>Visits (visits per month, only logged in users)</source>
+		</trans-unit>
+		<trans-unit id="type_tracking">
+			<source>Live Tracking</source>
+		</trans-unit>
+		<trans-unit id="type_visits_day_of_month_feusers">
+			<source>logged-in Visits (day of month)</source>
+		</trans-unit>
+		<trans-unit id="type_visits_day_of_week_feusers">
+			<source>logged-in Visits (day of week)</source>
+		</trans-unit>
+		<trans-unit id="type_visits_hour_of_day_feusers">
+			<source>logged-in Visits (hour of day)</source>
+		</trans-unit>
+		<trans-unit id="updated_until">
+			<source>Updated until: </source>
+		</trans-unit>
+		<trans-unit id="weekday_0">
+			<source>Sunday</source>
+		</trans-unit>
+		<trans-unit id="weekday_1">
+			<source>Monday</source>
+		</trans-unit>
+		<trans-unit id="weekday_2">
+			<source>Tuesday</source>
+		</trans-unit>
+		<trans-unit id="weekday_3">
+			<source>Wednesday</source>
+		</trans-unit>
+		<trans-unit id="weekday_4">
+			<source>Thursday</source>
+		</trans-unit>
+		<trans-unit id="weekday_5">
+			<source>Friday</source>
+		</trans-unit>
+		<trans-unit id="weekday_6">
+			<source>Saturday</source>
+		</trans-unit>
 		</body>
 	</file>
 </xliff>
