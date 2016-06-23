@@ -1,0 +1,38 @@
+{namespace h=Heilmann\JhKestatsBackend\ViewHelpers}
+
+<div class="table-responsive">
+    <div id="container" style="width: 600px; height: 300px;"></div>
+</div>
+
+<h:pageRenderer.addJsInlineCode name="JhKestatsBackend_overview" addToFooter="0">
+    function monthTickFormatter(inputNumber) {
+    output = inputNumber;
+    switch (inputNumber) {
+    <f:for each="{overviewPageData.pageviews_and_visits}" as="pageviewsAndVisits" key="index">
+        case "{index}": output = '{pageviewsAndVisits.element_title}'; break;
+    </f:for>
+    }
+    return output;
+    }
+
+    document.observe('dom:loaded', function(){
+    var pageviews = [];
+    var visits = [];
+    <f:for each="{overviewPageData.pageviews_and_visits}" as="pageviewsAndVisits" key="index">
+        pageviews.push([{index}, {pageviewsAndVisits.pageviews}]);
+        visits.push([{index}, {pageviewsAndVisits.visits}]);
+    </f:for>
+
+    var f = Flotr.draw($('container'), [
+    { data:pageviews, label: '<f:translate key="category_pages_all" />', color: '#0000ff', points:{show: true} },
+    { data:visits, label:'<f:translate key="category_visits" />', color: '#009933', points:{show: true} }
+    ],
+    {
+    legend: { backgroundOpacity:0 },
+    lines: { show:true, fill:true },
+    xaxis: { tickFormatter: monthTickFormatter, tickDecimals: 0 },
+    yaxis: { min:0 }
+    }
+    );
+    });
+</h:pageRenderer.addJsInlineCode>

@@ -14,7 +14,7 @@ if (TYPO3_MODE === 'BE') {
 		'mod1',	// Submodule key
 		'after:txkestatsM1',						// Position
 		array(
-			'Mod1' => 'list',
+			'Mod1' => 'list,flushCache',
 		),
 		array(
 			'access' => 'user,group',

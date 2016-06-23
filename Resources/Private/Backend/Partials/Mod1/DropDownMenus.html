@@ -1,0 +1,13 @@
+<f:for each="{dropDownMenus}" key="menuName" as="dropDownMenu">
+    <form name="form_{menuName}" id="form_{menuName}" style="display: inline-block;" method="post" action="{f:uri.action(arguments: dropDownMenu.arguments)}">
+        <div class="form-group">
+            <select name="tx_jhkestatsbackend_web_jhkestatsbackendmod1[{menuName}]" size="1" class="form-control" onchange="document.form_{menuName}.submit();">
+                <f:for each="{dropDownMenu.options}" as="option">
+                    <option value="{option.value}" {f:if(condition:'{option.isSelected}', then:'selected="selected"')}>
+                    {option.description}
+                    </option>
+                </f:for>
+            </select>
+        </div>
+    </form>
+</f:for>

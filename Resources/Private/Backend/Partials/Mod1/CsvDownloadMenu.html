@@ -1,0 +1,28 @@
+<f:for each="{csvDownloadMenu}" key="title" as="item">
+    <f:if condition="{item.titleOnly}">
+        <f:then>
+            <h2><f:translate key="{title}" /></h2>
+        </f:then>
+        <f:else>
+            <div class="panel panel-default">
+                <f:if condition="{item.noTitle}">
+                    <f:else>
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><f:translate key="{title}" /></h3>
+                        </div>
+                    </f:else>
+                </f:if>
+                <ul class="list-group">
+                    <f:for each="{item.links}" as="link">
+                        <li class="list-group-item">
+                            <f:link.action arguments="{link.arguments}">{link.description}</f:link.action>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </f:else>
+    </f:if>
+    <f:if condition="{item.appendDropDownMenus}">
+        <f:render partial="Mod1/DropDownMenus" arguments="{dropDownMenus: dropDownMenus}" />
+    </f:if>
+</f:for>

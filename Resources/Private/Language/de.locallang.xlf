@@ -211,6 +211,18 @@
 			<source>News</source>
 			<target>News</target>
 		</trans-unit>
+		<trans-unit id="flushCache.all" approved="yes">
+			<source>Flush complete statistics cache</source>
+			<target>Kompletten Statistik-Cache leeren</target>
+		</trans-unit>
+		<trans-unit id="flushCache.subpages" approved="yes">
+			<source>Flush statistics cache of this page and all sub-pages</source>
+			<target>Statistik-Cache dieser Seite und aller Unterseiten leeren</target>
+		</trans-unit>
+		<trans-unit id="flushCache.this" approved="yes">
+			<source>Flush statistics cache of this page</source>
+			<target>Statistik-Cache dieser Seite leeren</target>
+		</trans-unit>
 		<trans-unit id="header_counter" approved="yes">
 			<source>Counter</source>
 			<target>Anzahl</target>
