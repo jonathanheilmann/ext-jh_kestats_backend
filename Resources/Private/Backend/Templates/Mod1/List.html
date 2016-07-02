@@ -13,14 +13,7 @@
 <f:section name="content">
 
     <h1>
-        <f:if condition="{pageTitle}">
-            <f:then>
-                <f:translate key="statistics_for" /> {pageTitle} <f:translate key="and_subpages" />
-            </f:then>
-            <f:else>
-                <f:translate key="all_pages" />
-            </f:else>
-        </f:if>
+        <f:translate key="statistics_for" /> {pageTitle} <f:translate key="and_subpages" />
     </h1>
 
     <f:if condition="{tabMenus}">
