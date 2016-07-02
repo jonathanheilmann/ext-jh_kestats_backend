@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'ke_stats backend',
-	'description' => 'This extension provides a working backend module for TYPO3 CMS 7 LTS.',
+	'description' => 'Backend module for EXT:ke_stats for TYPO3 CMS 7 LTS',
 	'category' => 'module',
 	'author' => 'Jonathan Heilmann',
 	'author_email' => 'mail@jonathan-heilmann.de',
