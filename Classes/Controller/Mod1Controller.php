@@ -1,7 +1,6 @@
 <?php
 namespace Heilmann\JhKestatsBackend\Controller;
 
-
 /***************************************************************
  *
  *  Copyright notice
@@ -32,7 +31,6 @@ use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Extbase\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 /**
@@ -61,6 +59,12 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @inject
      */
     protected $kestatslib = null;
+
+    /**
+     * @var \Heilmann\JhKestatsBackend\Utility\KestatsUtility
+     * @inject
+     */
+    protected $kestatsUtility = null;
 
     /**
      * @var \Heilmann\JhKestatsBackend\Utility\MenuUtility
@@ -185,37 +189,60 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             $cacheIdentifier = md5(serialize($this->request->getArguments()));
             if (($entry = GeneralUtility::makeInstance(CacheManager::class)->getCache($this->extensionKey)->get($cacheIdentifier)) === false)
             {
-                // Get all required data
-                $tabMenus = $this->getTabMenus();
-
-                // Get pageTitle
-                $row = BackendUtility::getRecord('pages', $this->id);
-                $pageTitle = BackendUtility::getRecordTitle('pages', $row, 1);
-                $this->addCsvCol(LocalizationUtility::translate('statistics_for', $this->extensionName).' '.$pageTitle.' '.LocalizationUtility::translate('and_subpages', $this->extensionName));
-                // Get description
-                $this->addCsvCol($this->getDescription());
-                $this->addCsvRow();
-
-                // Get module content
-                if ($this->menuUtility->getSelectedValue('type') != 'overview')
-                    $this->getModuleContent();
-
-                if (!$this->csvOutput)
+                if ($this->id != 0)
                 {
+                    // Get all required data
+                    $tabMenus = $this->getTabMenus();
+
+                    // Get pageTitle
+                    $row = BackendUtility::getRecord('pages', $this->id);
+                    $pageTitle = BackendUtility::getRecordTitle('pages', $row, 1);
+                    $this->addCsvCol(LocalizationUtility::translate('statistics_for', $this->extensionName).' '.$pageTitle.' '.LocalizationUtility::translate('and_subpages', $this->extensionName));
+                    // Get description
+                    $this->addCsvCol($this->getDescription());
+                    $this->addCsvRow();
+
+                    // Get module content
+                    if ($this->menuUtility->getSelectedValue('type') != 'overview')
+                        $this->getModuleContent();
+
+                    if (!$this->csvOutput)
+                    {
+                        $entry = array(
+                            'pageTitle' => $pageTitle,
+                            'tabMenus' => $tabMenus,
+                            'type' => $this->menuUtility->getSelectedValue('type'),
+                            'overviewPageData' => $this->getOverviewPage(),
+                            'csvDownloadMenu' => $this->getCsvDownloadMenu(),
+                            'dropDownMenus'=> $this->dropDownMenus,
+                            'csvContent' => $this->csvContent,
+                            'updateInformation' => $this->getUpdateInformation()
+                        );
+                    } else
+                    {
+                        // Download csv file
+                        $this->downloadCsvFile();
+                    }
+                } else
+                {
+                    // Get overview for complete pagetree (pageId is 0)
+                    $this->menuUtility->initMenu('type','overview');
+
+                    $this->addCsvCol(LocalizationUtility::translate('statistics_for', $this->extensionName).' '.$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'].' '.LocalizationUtility::translate('and_subpages', $this->extensionName));
+                    // Get description
+                    $this->addCsvCol($this->getDescription());
+                    $this->addCsvRow();
+
                     $entry = array(
-                        'pageTitle' => $pageTitle,
-                        'tabMenus' => $tabMenus,
-                        'type' => $this->menuUtility->getSelectedValue('type'),
+                        'pageTitle' => $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'],
+                        'tabMenus' => array(),
+                        'type' => 'overview',
                         'overviewPageData' => $this->getOverviewPage(),
-                        'csvDownloadMenu' => $this->getCsvDownloadMenu(),
-                        'dropDownMenus'=> $this->dropDownMenus,
+                        'csvDownloadMenu' => array(),
+                        'dropDownMenus'=> array(),
                         'csvContent' => $this->csvContent,
                         'updateInformation' => $this->getUpdateInformation()
                     );
-                } else
-                {
-                    // Download csv file
-                    $this->downloadCsvFile();
                 }
 
                 $cacheType = 'nonPermanent';
@@ -283,7 +310,7 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $pageinfo = BackendUtility::readPageAccess($this->id, $GLOBALS['BE_USER']->getPagePermsClause(1));
         $access = is_array($pageinfo) ? 1 : 0;
 
-        return $this->id && $access;
+        return $access;
     }
 
     /**
@@ -509,12 +536,11 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     protected function getOverviewPage() {
         $overviewPageData = null;
-
+        
         if ($this->menuUtility->getSelectedValue('type') == 'overview')
         {
             // get the for the overview page data
-            /** @noinspection PhpVoidFunctionResultUsedInspection */
-            $overviewPageData = $this->kestatslib->refreshOverviewPageData($this->id);
+            $overviewPageData = $this->kestatsUtility->refreshOverviewPageData($this->id);
 
             // monthly progress, combined table
             $this->getTable(LocalizationUtility::translate('overview_pageviews_and_visits_monthly', $this->extensionName), 'element_title,pageviews,visits,pages_per_visit', $overviewPageData['pageviews_and_visits'], 'no_line_numbers', '', '');
