@@ -501,6 +501,13 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                 $tabMenus['extension_type'] = $this->menuUtility->generateTabMenu($extensionTypesArray,'extension_type');
             }
         }
+        
+        // Signal do modify tabMenus
+        $this->signalSlotDispatcher->dispatch(
+            __CLASS__,
+            'modifyTabMenus',
+            array(&$tabMenus)
+        );
 
         return $tabMenus;
     }
@@ -642,7 +649,12 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         if (is_array($this->elementLanguagesArray) && count($this->elementLanguagesArray) > 0)
             $this->dropDownMenus['element_language'] = $this->menuUtility->generateDropDownMenu($this->elementLanguagesArray,'element_language');
 
-        // todo: Signal do modify tabMenu
+        // Signal do modify selectorMenu
+        $this->signalSlotDispatcher->dispatch(
+            __CLASS__,
+            'modifySelectorMenu',
+            array(&$this->dropDownMenus)
+        );
     }
 
     /**
@@ -1016,9 +1028,7 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                 $this->renderSelectorMenu(STAT_TYPE_EXTENSION,$category);
                 $columns = 'element_title,element_uid,counter';
                 $resultArray = $this->getStatResults(STAT_TYPE_EXTENSION,$category,$columns);
-                $this->addContentAboveTable('extension', $category);
                 $this->getTable(LocalizationUtility::translate('type_extension', $this->extensionName),$columns,$resultArray,$category);
-                $this->addContentBelowTable('extension', $category);
                 break;
         }
     }
@@ -1444,7 +1454,12 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                                     $formatted_data = substr($formatted_data,0,$this->maxLengthTableContent).'...';
                                 }
                             }
-                            // todo: Signal for individual modifications of the description col
+                            // Signal for individual modifications of the description col
+                            $this->signalSlotDispatcher->dispatch(
+                                __CLASS__,
+                                'modifyDescriptionCol',
+                                array(&$formatted_data, $data, $special)
+                            );
                             $this->addCsvCol($formatted_data);
                         } else {
                             // print the data
@@ -1508,28 +1523,6 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         // add caption to csv
         $this->addCsvRow();
         $this->addCsvCol($caption);
-    }
-
-    /**
-     * method which calls a signal to add some content above table
-     *
-     * @param string $type
-     * @param string $category
-     */
-    protected function addContentAboveTable($type, $category)
-    {
-        // todo: Signal for additional content above table
-    }
-
-    /**
-     * method which calls a signal to add some content below table
-     *
-     * @param string $type
-     * @param string $category
-     */
-    protected function addContentBelowTable($type, $category)
-    {
-        // todo: Signal for additional content above table
     }
 
     /**
