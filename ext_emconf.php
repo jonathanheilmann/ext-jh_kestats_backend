@@ -12,16 +12,16 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'ke_stats backend',
-	'description' => 'This extension provides a working backend module for TYPO3 CMS 7 LTS. (CSV-Download does not work yet.)',
+	'description' => 'Backend module for EXT:ke_stats for TYPO3 CMS 7 LTS',
 	'category' => 'module',
 	'author' => 'Jonathan Heilmann',
 	'author_email' => 'mail@jonathan-heilmann.de',
-	'state' => 'alpha',
+	'state' => 'beta',
 	'internal' => '',
 	'uploadfolder' => '0',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 1,
-	'version' => '0.1.0',
+	'version' => '0.2.0',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '7.6.0-7.6.99',

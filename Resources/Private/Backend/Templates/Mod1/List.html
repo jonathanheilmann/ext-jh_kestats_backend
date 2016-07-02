@@ -1,18 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:f="http://xsd.helmut-hummel.de/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:h="Heilmann\JhKestatsBackend\ViewHelpers">
+<head>
+
+</head>
+<body>
+
 {namespace h=Heilmann\JhKestatsBackend\ViewHelpers}
 
-<f:layout name="Default" xmlns:f="http://www.w3.org/1999/html"/>
+<f:layout name="Default" />
 
 <f:section name="content">
 
     <h1>
-        <f:if condition="{pageTitle}">
-            <f:then>
-                <f:translate key="statistics_for" /> {pageTitle} <f:translate key="and_subpages" />
-            </f:then>
-            <f:else>
-                <f:translate key="all_pages" />
-            </f:else>
-        </f:if>
+        <f:translate key="statistics_for" /> {pageTitle} <f:translate key="and_subpages" />
     </h1>
 
     <f:if condition="{tabMenus}">
@@ -29,7 +30,7 @@
         </f:if>
     </f:if>
 
-	<f:if condition="{type} == 'csvdownload'">
+    <f:if condition="{type} == 'csvdownload'">
         <f:then>
             <f:render partial="Mod1/CsvDownloadMenu" arguments="{csvDownloadMenu: csvDownloadMenu, dropDownMenus: dropDownMenus}" />
         </f:then>
@@ -72,3 +73,7 @@
     </f:if>
 
 </f:section>
+
+</body>
+</html>
+
