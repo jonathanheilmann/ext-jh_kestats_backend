@@ -43,12 +43,6 @@ class MenuUtility
     /** @var array  */
     protected $menuNames = array();
 
-    /**
-     * @var \TYPO3\CMS\Backend\Routing\UriBuilder
-     * @inject
-     */
-    protected $uriBuilder = null;
-
     /** @var array */
     protected $tabmenuPresetValues = array();
 
