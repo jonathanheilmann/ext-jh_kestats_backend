@@ -186,7 +186,7 @@ class Mod1Controller extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         if ($access)
         {
             $tags = array('pageId_' . $this->id);
-            $cacheIdentifier = md5(serialize($this->request->getArguments()));
+            $cacheIdentifier = md5(serialize($this->request->getArguments()) + $this->id);
             if (($entry = GeneralUtility::makeInstance(CacheManager::class)->getCache($this->extensionKey)->get($cacheIdentifier)) === false)
             {
                 if ($this->id != 0)
